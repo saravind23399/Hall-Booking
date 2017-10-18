@@ -50,6 +50,11 @@ Public Class WebForm3
         End If
 last:
     End Sub
+
+    Private Sub butRequest_Click(sender As Object, e As EventArgs) Handles butRequest.Click
+        Response.Redirect("~/AccountRequest.aspx")
+    End Sub
+
     Public Function HashPassword(ByVal ClearString As String) As String
         Dim uEncode As New UnicodeEncoding()
         Dim bytClearString() As Byte = uEncode.GetBytes(ClearString)

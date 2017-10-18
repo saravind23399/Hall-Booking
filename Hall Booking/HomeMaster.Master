@@ -34,7 +34,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="adminHome.aspx"><span><img src="../Resources/mepcologo.png" alt=" MSEC Logo" height="25" />&nbsp;Seminar Hall Booking - MSEC</span></a>
+                        <a class="navbar-brand" href="Home.aspx"><span><img src="../Resources/mepcologo.png" alt=" MSEC Logo" height="25" />&nbsp;Seminar Hall Booking - MSEC</span></a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
