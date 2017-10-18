@@ -38,9 +38,9 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="" id="lnkHome" runat="server"><a href="Home.aspx">Home</a></li>
-                            <li class="" id="lnkAbout" runat="server"><a href="About.aspx">About</a></li>
-                            <li class="" id="lnkLogin" runat="server"><a href="#">Login</a></li>
+                            <li class="" id="lnkHome" runat="server"><asp:hyperlink ID="HomeLink" runat="server" Text="Home" href="Home.aspx"></asp:hyperlink></li>
+                            <li class="" id="lnkAbout" runat="server"><asp:hyperlink ID="AboutLink" runat="server" href="About.aspx">About</asp:hyperlink></li>
+                            <li class="" id="lnkLogin" runat="server"><asp:hyperlink ID="Loginlnk" runat="server" href="Login.aspx">Login</asp:hyperlink></li>
                         </ul>
                     </div>
                 </div>

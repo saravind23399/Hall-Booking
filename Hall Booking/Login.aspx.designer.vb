@@ -11,68 +11,89 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class adminMaster
+Partial Public Class WebForm3
     
     '''<summary>
-    '''head control.
+    '''lblLoginErrors control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents lblLoginErrors As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''form1 control.
+    '''TxtUsername control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+    Protected WithEvents TxtUsername As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''lnkAdminPanel control.
+    '''usernameError control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lnkAdminPanel As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents usernameError As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''lnkAddUsers control.
+    '''txtPassword control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lnkAddUsers As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Li1 control.
+    '''passwordError control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Li1 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents passwordError As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''signout control.
+    '''butSignIn control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents signout As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents butSignIn As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''contents control.
+    '''butRequest control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents contents As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents butRequest As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''errors control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents errors As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Master property.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated property.
+    '''</remarks>
+    Public Shadows ReadOnly Property Master() As Hall_Booking.HomeMaster
+        Get
+            Return CType(MyBase.Master,Hall_Booking.HomeMaster)
+        End Get
+    End Property
 End Class

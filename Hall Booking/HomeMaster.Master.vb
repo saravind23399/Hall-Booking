@@ -15,8 +15,16 @@
             lnkAbout.Attributes.Add("class", value)
         End Set
     End Property
+    Public WriteOnly Property HomeText As String
+        Set(ByVal value As String)
+            HomeLink.Text = value
+        End Set
+    End Property
+    Public WriteOnly Property LoginVisible As Boolean
+        Set(ByVal value As Boolean)
+            Loginlnk.Visible = value
+        End Set
+    End Property
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
     End Sub
-
 End Class

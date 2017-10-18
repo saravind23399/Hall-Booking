@@ -4,9 +4,13 @@ Public Class addUsers
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Master.AdminPanelSelected = ""
-        Master.AddUsersSelected = "active"
-        txtDepartment.Text = "CSE"
+        If Session.Item("TYPE") = "ADMIN" Then
+            Master.AdminPanelSelected = ""
+            Master.AddUsersSelected = "active"
+            txtDepartment.Text = Session.Item("Department")
+        Else
+            Response.Redirect("Home.aspx")
+        End If
     End Sub
 
     Private Sub butSignUp_Click(sender As Object, e As EventArgs) Handles butSignUp.Click
@@ -27,7 +31,7 @@ Public Class addUsers
                 Dim password As String = HashPassword(txtPassword.Text)
                 Dim dept As String = txtDepartment.Text
                 Dim email As String = txtEmail.Text
-                Dim cmd As New SqlCommand("insert into users values ('" + username + "','" + password + "','" + email + "','" + dept + "','faculty')", con)
+                Dim cmd As New SqlCommand("insert into users values ('" + username + "','" + password + "','" + email + "','" + dept + "','FACULTY')", con)
                 cmd.ExecuteNonQuery()
                 errors.Text = "User Registered."
                 errors.Font.Size = 12

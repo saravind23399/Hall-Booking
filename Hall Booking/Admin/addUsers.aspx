@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="contents" runat="server">
     <div class="container">
         <div class="form-group">
-            <h3>Register Users</h3>
+            <h2>Register Users</h2>
             <hr />
         </div>
         <div class="form-group-lg">

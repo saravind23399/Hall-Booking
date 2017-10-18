@@ -41,6 +41,15 @@ Partial Public Class HomeMaster
     Protected WithEvents lnkHome As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
+    '''HomeLink control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HomeLink As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
     '''lnkAbout control.
     '''</summary>
     '''<remarks>
@@ -50,6 +59,15 @@ Partial Public Class HomeMaster
     Protected WithEvents lnkAbout As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
+    '''AboutLink control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AboutLink As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
     '''lnkLogin control.
     '''</summary>
     '''<remarks>
@@ -57,6 +75,15 @@ Partial Public Class HomeMaster
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lnkLogin As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''Loginlnk control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Loginlnk As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
     '''ContentPlaceHolder1 control.

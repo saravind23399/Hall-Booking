@@ -57,6 +57,7 @@
                                     <li><a href="#">Hall Availablity</a></li>
                                 </ul>
                             </li>
+                            <li class="" id="Li1" runat="server"><a href="../About.aspx">About</a></li>
                             <li>
                                 <asp:Button ID="signout" runat="server" CssClass="btn btn-default navbar-btn" Text="Logout" Visible="True" />
                             </li>
