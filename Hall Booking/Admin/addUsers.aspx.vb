@@ -27,7 +27,7 @@ Public Class addUsers
                 Dim password As String = HashPassword(txtPassword.Text)
                 Dim dept As String = txtDepartment.Text
                 Dim email As String = txtEmail.Text
-                Dim cmd As New SqlCommand("insert into users values ('" + username + "','" + password + "','" + email + "','" + dept + "')", con)
+                Dim cmd As New SqlCommand("insert into users values ('" + username + "','" + password + "','" + email + "','" + dept + "','faculty')", con)
                 cmd.ExecuteNonQuery()
                 errors.Text = "User Registered."
                 errors.Font.Size = 12
