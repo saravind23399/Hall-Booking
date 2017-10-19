@@ -41,7 +41,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="" id="lnkAdminPanel" runat="server"><a href="adminHome.aspx">Admin Panel</a></li>
                             <li class="" id="lnkAddUsers" runat="server"><a href="addUsers.aspx">Register Users</a></li>
-                            <li><a href="#">Requests</a> </li>
+                            <li class="" id="lnkUserRequests" runat="server"><asp:hyperlink runat="server" ID="requestsbutton" href="adminUserRequests.aspx">Requests</asp:hyperlink> </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions<b class="caret"></b></a>
                                 <ul class="dropdown-menu">

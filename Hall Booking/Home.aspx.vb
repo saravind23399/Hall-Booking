@@ -5,8 +5,6 @@
         If Session.Item("USERNAME") <> "" Then
             If Session.Item("TYPE") = "ADMIN" Then
                 Response.Redirect("~/Admin/adminHome.aspx")
-            Else
-                Response.Redirect("~/Home.aspx")
             End If
         End If
         Master.AboutSelected = ""

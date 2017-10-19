@@ -109,8 +109,10 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\addUserFromRequest.aspx" />
     <Content Include="Admin\addUsers.aspx" />
     <Content Include="Admin\adminHome.aspx" />
+    <Content Include="Admin\adminUserRequests.aspx" />
     <Content Include="css\custom.css" />
     <Content Include="Resources\mepcologo.png" />
     <Content Include="css\bootstrap-theme.css" />
@@ -128,6 +130,13 @@
     <Content Include="AccountRequest.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\addUserFromRequest.aspx.designer.vb">
+      <DependentUpon>addUserFromRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\addUserFromRequest.aspx.vb">
+      <DependentUpon>addUserFromRequest.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Admin\addUsers.aspx.designer.vb">
       <DependentUpon>addUsers.aspx</DependentUpon>
     </Compile>
@@ -147,6 +156,13 @@
     </Compile>
     <Compile Include="Admin\adminMaster.Master.vb">
       <DependentUpon>adminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\adminUserRequests.aspx.designer.vb">
+      <DependentUpon>adminUserRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminUserRequests.aspx.vb">
+      <DependentUpon>adminUserRequests.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HomeMaster.Master.designer.vb">

@@ -5,10 +5,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <h2>Welcome</h2>
-        <hr />
+        <div class="jumbotron">
+            <img src="Resources/mepcologo.png" height="190" class="pull-right">
+
+        <h1>Welcome to </h1>
+        <h1>Seminar Halls Portal</h1>
+            <hr />
+        <p>Login below to book your hall now</p>
+  <p><a class="btn btn-primary btn-lg" href="Login.aspx" role="button">Login</a></p>
+</div>
     </div>
     <div class="container center">
-
-    </div>
+        </div>
 </asp:Content>
