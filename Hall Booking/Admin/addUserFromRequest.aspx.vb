@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Public Class addUserFromRequest
     Inherits System.Web.UI.Page
+    Private Shared facid As String = ""
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Master.UserRequestsSelected = "active"
         If Not IsPostBack Then
@@ -17,6 +18,7 @@ Public Class addUserFromRequest
                 txtEmail.Text = dt(0)(3)
                 txtDepartment.Text = dt(0)(4)
                 txtPassword.Focus()
+                facid = Session.Item("ADMIN_OP_FACID")
                 Session.Item("ADMIN_OP_FACID") = ""
                 Session.Item("ADMIN_OP") = ""
             Else
@@ -45,7 +47,8 @@ Public Class addUserFromRequest
         Dim dt = New DataTable
         sda.Fill(dt)
         If dt.Rows.Count = 0 Then
-            cmd.CommandText = "Insert into users values('" + TxtUsername.Text + "','" + HashPassword(txtCPassword.Text) + "','" + txtEmail.Text + "','" + txtDepartment.Text + "','FACULTY')"
+            MsgBox(facid)
+            cmd.CommandText = "Insert into users values('" + TxtUsername.Text + "','" + HashPassword(txtCPassword.Text) + "','" + txtEmail.Text + "','" + txtDepartment.Text + "','FACULTY','" + facid + "')"
             cmd.ExecuteNonQuery()
             errors.Text = "User has successfully been created."
             errors.ForeColor = Drawing.Color.Green

@@ -14,7 +14,7 @@ Public Class addUsers
     End Sub
 
     Private Sub butSignUp_Click(sender As Object, e As EventArgs) Handles butSignUp.Click
-        If TxtUsername.Text = "" Or txtPassword.Text = "" Or txtCPassword.Text = "" Or txtEmail.Text = "" Or txtDepartment.Text = "" Then
+        If TxtUsername.Text = "" Or txtPassword.Text = "" Or txtCPassword.Text = "" Or txtEmail.Text = "" Or txtFacID.Text = "" Or txtDepartment.Text = "" Then
             errors.Text = "*All Fields are mandatory"
             errors.ForeColor = Drawing.Color.Red
         Else
@@ -26,16 +26,26 @@ Public Class addUsers
             Else
                 Dim cs As String = My.Settings.UsersConnection
                 Dim con As New SqlConnection(cs)
+                Dim cmd As New SqlCommand("Select * from Users where username='" + TxtUsername.Text + "'", con)
                 con.Open()
-                Dim username As String = TxtUsername.Text
-                Dim password As String = HashPassword(txtPassword.Text)
-                Dim dept As String = txtDepartment.Text
-                Dim email As String = txtEmail.Text
-                Dim cmd As New SqlCommand("insert into users values ('" + username + "','" + password + "','" + email + "','" + dept + "','FACULTY')", con)
-                cmd.ExecuteNonQuery()
-                errors.Text = "User Registered."
-                errors.Font.Size = 12
-                errors.ForeColor = Drawing.Color.Green
+                Dim sda As New SqlDataAdapter(cmd)
+                Dim dt As New DataTable
+                sda.Fill(dt)
+                If (dt.Rows.Count = 0) Then
+                    Dim username As String = TxtUsername.Text
+                    Dim password As String = HashPassword(txtPassword.Text)
+                    Dim dept As String = txtDepartment.Text
+                    Dim email As String = txtEmail.Text
+                    cmd.CommandText = ("insert into users values ('" + username + "','" + password + "','" + email + "','" + dept + "','FACULTY','" + txtFacID.Text + "')")
+                    cmd.ExecuteNonQuery()
+                    errors.Text = "User Registered."
+                    errors.Font.Size = 12
+                    errors.ForeColor = Drawing.Color.Green
+                Else
+                    errors.Text = "*Username already exists."
+                    errors.Font.Size = 12
+                    errors.ForeColor = Drawing.Color.Red
+                End If
             End If
         End If
     End Sub

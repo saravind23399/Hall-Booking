@@ -13,6 +13,10 @@
             <div class="col-lg-11">
                 <asp:TextBox ID="TxtUsername" runat="server" Class="form-control" placeholder="Username" ></asp:TextBox>
             </div>
+            <label class="col-lg-11 pad">Faculty ID</label>
+            <div class="col-lg-11">
+                <asp:TextBox ID="txtFacID" runat="server" Class="form-control" placeholder="Faculty ID" ></asp:TextBox>                
+            </div>
             <label class="col-lg-11 pad">Password </label>
             <div class="col-lg-11">
                 <asp:TextBox ID="txtPassword" runat="server" Class="form-control" placeholder="Password" TextMode="Password" ></asp:TextBox>
@@ -21,7 +25,7 @@
             <div class="col-lg-11">
                 <asp:TextBox ID="txtCPassword" runat="server" Class="form-control" Textmode="Password" placeholder="Confirm Password" ></asp:TextBox>
             </div>
-            <label class="col-lg-11 pad">Confirm Password </label>
+            <label class="col-lg-11 pad">EMail ID </label>
             <div class="col-lg-11">
                 <asp:TextBox ID="txtEmail" runat="server" Class="form-control" Textmode="Email" placeholder="Email ID" ></asp:TextBox>
             </div>

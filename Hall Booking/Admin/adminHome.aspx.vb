@@ -5,9 +5,9 @@
 
         If Session.Item("TYPE") = "ADMIN" Then
             Master.AdminPanelSelected = "active"
-            Master.AddUsersSelected = ""
+            lblWelcome.Text = "Department of " + Session.Item("DEPARTMENT") + " - Admin Panel"
         Else
-            Response.Redirect("Home.aspx")
+            Response.Redirect("~/Home.aspx")
         End If
     End Sub
 End Class

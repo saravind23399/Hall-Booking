@@ -23,6 +23,15 @@ Partial Public Class addUsers
     Protected WithEvents TxtUsername As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''txtFacID control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtFacID As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
     '''txtPassword control.
     '''</summary>
     '''<remarks>

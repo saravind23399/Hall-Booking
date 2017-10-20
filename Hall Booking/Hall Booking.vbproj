@@ -112,6 +112,7 @@
     <Content Include="Admin\addUserFromRequest.aspx" />
     <Content Include="Admin\addUsers.aspx" />
     <Content Include="Admin\adminHome.aspx" />
+    <Content Include="Admin\adminManageUsers.aspx" />
     <Content Include="Admin\adminUserRequests.aspx" />
     <Content Include="css\custom.css" />
     <Content Include="Resources\mepcologo.png" />
@@ -135,7 +136,7 @@
     </Compile>
     <Compile Include="Admin\addUserFromRequest.aspx.vb">
       <DependentUpon>addUserFromRequest.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\addUsers.aspx.designer.vb">
       <DependentUpon>addUsers.aspx</DependentUpon>
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="Admin\adminHome.aspx.vb">
       <DependentUpon>adminHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\adminManageUsers.aspx.designer.vb">
+      <DependentUpon>adminManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminManageUsers.aspx.vb">
+      <DependentUpon>adminManageUsers.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\adminMaster.Master.designer.vb">
@@ -243,6 +251,8 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>

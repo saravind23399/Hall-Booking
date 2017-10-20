@@ -11,16 +11,34 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class adminHome
+Partial Public Class adminManageUsers
     
     '''<summary>
-    '''lblWelcome control.
+    '''alrtStyle control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblWelcome As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents alrtStyle As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''alertLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents alertLabel As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Users control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Users As Global.System.Web.UI.WebControls.PlaceHolder
     
     '''<summary>
     '''Master property.
