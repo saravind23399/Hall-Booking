@@ -43,6 +43,8 @@
             </div>
             <div class="col-xs-11 space-verticall">
                 <asp:Button ID="butRequest" class="btn btn-lg btn-success btn-default" runat="server" Text="Place Request" />
+                <br /><br /><asp:label runat="server" text="Already have an account? "></asp:label><a href="Login.aspx">Login</a>
+
                 <br />
                 <br />
                 <asp:Label ID="errors" runat="server" Text=""></asp:Label>
