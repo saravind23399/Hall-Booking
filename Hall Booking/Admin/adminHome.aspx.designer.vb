@@ -23,6 +23,15 @@ Partial Public Class adminHome
     Protected WithEvents lblWelcome As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''myTable control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents myTable As Global.System.Web.UI.WebControls.Table
+    
+    '''<summary>
     '''Master property.
     '''</summary>
     '''<remarks>

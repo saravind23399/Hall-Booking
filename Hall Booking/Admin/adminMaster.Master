@@ -46,11 +46,12 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-header">Halls</li>
-                                    <li><a href="#">Add Halls</a></li>
+                                    <li><a href="adminAddHalls.aspx">Add Halls</a></li>
+                                    <li><a href="#">Manage</a></li>
                                     <li><a href="#">Remove Halls</a></li>
                                     <li class="divider" role="separator"></li>
                                     <li class="dropdown-header">Users</li>
-                                    <li><a href="#">Delete Users</a></li>
+                                    <li><a href="adminManageUsers.aspx">Manage</a></li>
                                     <li class="divider" role="separator"></li>
                                     <li class="dropdown-header">Other Departments</li>
                                     <li><a href="#">Request a Hall</a></li>

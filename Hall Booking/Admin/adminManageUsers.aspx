@@ -7,9 +7,10 @@
         <div class="container">
             <h2><b class="glyphicon glyphicon-user "></b>&nbsp; Manage Users </h2>
             <hr />
-            <div id="alrtStyle" runat="server" role="alert">
+            <asp:Panel ID="alertStyle" Visible="false" CssClass="" role="alert" runat="server">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <asp:Label Text="" ID="alertLabel" runat="server"></asp:Label>
-            </div>
+                </asp:Panel>
             <br /><br /><br />
             <asp:PlaceHolder ID="Users" runat="server"></asp:PlaceHolder>
         </div>

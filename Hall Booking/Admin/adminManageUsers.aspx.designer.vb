@@ -14,13 +14,13 @@ Option Explicit On
 Partial Public Class adminManageUsers
     
     '''<summary>
-    '''alrtStyle control.
+    '''alertStyle control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents alrtStyle As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents alertStyle As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
     '''alertLabel control.

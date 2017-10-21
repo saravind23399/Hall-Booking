@@ -35,3 +35,18 @@ body {
 .pad{
     padding-top:20px;
 }
+
+.col-success {
+    background-color: #dff0d8;
+}
+
+.col-error {
+    background-color: #f2dede;
+}
+
+.col-warning {
+    background-color: #fcf8e3;
+}
+
+.col-info {
+    background-color: #d9edf7;

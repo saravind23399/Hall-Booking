@@ -1,7 +1,9 @@
 ﻿Imports System.Data.SqlClient
 Public Class adminManageUsers
     Inherits System.Web.UI.Page
-
+    Private Shared deletedUser = ""
+    Private Shared alert = ""
+    Private Shared alertEnable As Boolean = False
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Session.Item("TYPE") = "ADMIN" Then
             Dim cs As String = My.Settings.UsersConnection
@@ -17,6 +19,11 @@ Public Class adminManageUsers
         Else
             Response.Redirect("~/Home.aspx")
         End If
+        If deletedUser <> "" Then
+            alertLabel.Text = "User, " + deletedUser + " was removed"
+        End If
+        alertStyle.Visible = alertEnable
+        alertStyle.CssClass += "alert alert-dismissable " + alert
     End Sub
     Private Sub createUser(ByVal dr As DataRow)
 #Region "Panel Declarations"
@@ -38,19 +45,19 @@ Public Class adminManageUsers
         detailsPanel.Controls.Add(New LiteralControl("<strong> Email </strong> : " + dr(3).ToString() + "<br>"))
 #End Region
 #Region "Button Panel"
-        Dim btnGrant As New Button
-        btnGrant.Text = "Edit"
-        'AddHandler btnGrant.Click, AddressOf acceptRequest
-        btnGrant.CssClass = "btn btn-success col-lg-6"
-        btnGrant.Attributes.Add("TAG", dr(2))
-        Dim btnDismiss As New Button
-        'AddHandler btnDismiss.Click, AddressOf rejectRequest
-        btnDismiss.Text = "Delete"
-        btnDismiss.Attributes.Add("TAG", dr(2))
-        btnDismiss.CssClass = "btn btn-danger col-lg-6"
+        Dim btnEdit As New Button
+        btnEdit.Text = "Edit"
+        AddHandler btnEdit.Click, AddressOf EditUser
+        btnEdit.CssClass = "btn btn-success col-lg-6"
+        btnEdit.Attributes.Add("TAG", dr(1))
+        Dim btnDelete As New Button
+        AddHandler btnDelete.Click, AddressOf DeleteUser
+        btnDelete.Text = "Delete"
+        btnDelete.Attributes.Add("TAG", dr(1))
+        btnDelete.CssClass = "btn btn-danger col-lg-6"
         buttonPanel.Controls.Add(New LiteralControl("<hr>"))
-        buttonPanel.Controls.Add(btnGrant)
-        buttonPanel.Controls.Add(btnDismiss)
+        buttonPanel.Controls.Add(btnEdit)
+        buttonPanel.Controls.Add(btnDelete)
         buttonPanel.Controls.Add(New LiteralControl("<br><br><br>"))
 #End Region
 #Region "Panel Insertion"
@@ -60,5 +67,24 @@ Public Class adminManageUsers
         Users.Controls.Add(New LiteralControl("<br>"))
 #End Region
     End Sub
+    Private Sub EditUser(ByVal sender As Object, ByVal e As EventArgs)
 
+    End Sub
+    Private Sub DeleteUser(ByVal sender As Object, ByVal e As EventArgs)
+        Dim facid As String = CType(sender, Button).Attributes("TAG")
+        Dim cs As String = My.Settings.UsersConnection
+        Dim conn As New SqlConnection(cs)
+        Dim cmd As New SqlCommand("delete from Users where username='" + facid + "'", conn)
+        conn.Open()
+        cmd.ExecuteNonQuery()
+        conn.Close()
+        deletedUser = facid
+        alertEnable = True
+        alert = "alert-danger"
+        Response.Redirect("adminManageUsers.aspx")
+    End Sub
+
+    Private Sub adminManageUsers_Unload(sender As Object, e As EventArgs) Handles Me.Unload
+        alertEnable = False
+    End Sub
 End Class

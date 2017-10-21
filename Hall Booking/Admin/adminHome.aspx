@@ -18,11 +18,18 @@
                             <h4>Today</h4>
                         </div>
                         <div class="panel-body">
-                        <p>Heres whats happeing in your department</p><br />
-                        <div id="todayEvents ">
-
+                            <p>Heres whats happeing in your department</p>
+                            <br />
+                            <div class="table-responsive">
+                                <asp:table ID="myTable" CssClass="table table-hover table-bordered table-striped" runat="server"  class="table table-hover">
+                                    <asp:TableHeaderRow>
+                                        <asp:TableHeaderCell>Time</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell>Halls Booked</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell>Booked By</asp:TableHeaderCell>
+                                    </asp:TableHeaderRow>
+                                </asp:table>
+                            </div> 
                         </div>
-                            </div>
                     </div>
                 </div>
                 <div class="col-lg-4 pull-right ">
@@ -32,22 +39,24 @@
                                 <h4>Halls</h4>
                             </div>
                             <div class="panel-body">
-                                <a href="#" class="btn btn-block btn-success"><b class ="glyphicon glyphicon-plus pull-left"></b>  Add a hall</a>
-                                <a href="#" class="btn btn-block btn-danger"><b class ="glyphicon glyphicon-trash pull-left"></b>  Remove a hall</a>
-                                <a href="#" class="btn btn-block btn-primary"><b class ="glyphicon glyphicon-inbox pull-left"></b>  Request a hall - Other Departments</a>
-                                <a href="#" class="btn btn-block btn-primary"><b class ="glyphicon glyphicon-calendar pull-left"></b>  Hall availablity</a>
+                                <a href="adminAddHalls.aspx" class="btn btn-block btn-success"><b class="glyphicon glyphicon-plus pull-left"></b>Add a hall</a>
+                                <a href="adminAddHalls.aspx" class="btn btn-block btn-warning"><b class="glyphicon glyphicon-cog pull-left"></b>Manage</a>
+                                <a href="#" class="btn btn-block btn-danger"><b class="glyphicon glyphicon-trash pull-left"></b>Remove a hall</a>
+                                <a href="#" class="btn btn-block btn-primary"><b class="glyphicon glyphicon-inbox pull-left"></b>Request a hall - Other Departments</a>
+                                <a href="#" class="btn btn-block btn-primary"><b class="glyphicon glyphicon-calendar pull-left"></b>Hall availablity</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="panel panel-danger">
+                        <div class="panel panel-info">
                             <div class="panel-heading">
                                 <h4>Users</h4>
                             </div>
                             <div class="panel-body">
-                                <a href="adminManageUsers.aspx" class="btn btn-block btn-success"><b class="glyphicon glyphicon-cog pull-left"></b>  Manage</a>
-                                <a href="addUsers.aspx" class="btn btn-primary btn-block"><b class="glyphicon glyphicon-ok pull-left"></b>  Add users</a>
-                                <a href="adminUserRequests.aspx" class="btn btn-primary btn-block"><b class ="glyphicon glyphicon-user pull-left"></b>  Account Requests</a>
+                                <a href="addUsers.aspx" class="btn btn-success btn-block"><b class="glyphicon glyphicon-ok pull-left"></b>Add users</a>
+                                <a href="adminManageUsers.aspx" class="btn btn-block btn-warning"><b class="glyphicon glyphicon-cog pull-left"></b>Manage</a>
+
+                                <a href="adminUserRequests.aspx" class="btn btn-primary btn-block"><b class="glyphicon glyphicon-user pull-left"></b>Account Requests</a>
                             </div>
                         </div>
 
