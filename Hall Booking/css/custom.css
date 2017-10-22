@@ -2,6 +2,13 @@
     text-align: center;
 }
 
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+
 .center-page {
     width: 400px;
     height: 400px;
@@ -50,3 +57,4 @@ body {
 
 .col-info {
     background-color: #d9edf7;
+}

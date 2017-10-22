@@ -10,7 +10,7 @@
                 <asp:Label ID="lblWelcome" runat="server" Text=""></asp:Label>
             </h2>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid ">
             <div class="row">
                 <div class="col-lg-8 pull-left">
                     <div class="panel panel-info">
@@ -40,8 +40,7 @@
                             </div>
                             <div class="panel-body">
                                 <a href="adminAddHalls.aspx" class="btn btn-block btn-success"><b class="glyphicon glyphicon-plus pull-left"></b>Add a hall</a>
-                                <a href="adminAddHalls.aspx" class="btn btn-block btn-warning"><b class="glyphicon glyphicon-cog pull-left"></b>Manage</a>
-                                <a href="#" class="btn btn-block btn-danger"><b class="glyphicon glyphicon-trash pull-left"></b>Remove a hall</a>
+                                <a href="adminManageHalls.aspx" class="btn btn-block btn-warning"><b class="glyphicon glyphicon-cog pull-left"></b>Manage</a>
                                 <a href="#" class="btn btn-block btn-primary"><b class="glyphicon glyphicon-inbox pull-left"></b>Request a hall - Other Departments</a>
                                 <a href="#" class="btn btn-block btn-primary"><b class="glyphicon glyphicon-calendar pull-left"></b>Hall availablity</a>
                             </div>
@@ -55,7 +54,6 @@
                             <div class="panel-body">
                                 <a href="addUsers.aspx" class="btn btn-success btn-block"><b class="glyphicon glyphicon-ok pull-left"></b>Add users</a>
                                 <a href="adminManageUsers.aspx" class="btn btn-block btn-warning"><b class="glyphicon glyphicon-cog pull-left"></b>Manage</a>
-
                                 <a href="adminUserRequests.aspx" class="btn btn-primary btn-block"><b class="glyphicon glyphicon-user pull-left"></b>Account Requests</a>
                             </div>
                         </div>

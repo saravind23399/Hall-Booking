@@ -113,6 +113,7 @@
     <Content Include="Admin\addUsers.aspx" />
     <Content Include="Admin\adminAddHalls.aspx" />
     <Content Include="Admin\adminHome.aspx" />
+    <Content Include="Admin\adminManageHalls.aspx" />
     <Content Include="Admin\adminManageUsers.aspx" />
     <Content Include="Admin\adminUserRequests.aspx" />
     <Content Include="css\custom.css" />
@@ -158,6 +159,13 @@
     </Compile>
     <Compile Include="Admin\adminHome.aspx.vb">
       <DependentUpon>adminHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\adminManageHalls.aspx.designer.vb">
+      <DependentUpon>adminManageHalls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminManageHalls.aspx.vb">
+      <DependentUpon>adminManageHalls.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\adminManageUsers.aspx.designer.vb">
