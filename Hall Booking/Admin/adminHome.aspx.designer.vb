@@ -32,6 +32,15 @@ Partial Public Class adminHome
     Protected WithEvents myTable As Global.System.Web.UI.WebControls.Table
     
     '''<summary>
+    '''userRequestButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents userRequestButton As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
     '''Master property.
     '''</summary>
     '''<remarks>

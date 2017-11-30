@@ -44,8 +44,8 @@ Public Class adminUserRequests
 #Region "Details Panel"
         detailsPanel.Controls.Add(New LiteralControl("<h3> Faculty #" + dr(2) + " </h3><hr>"))
         detailsPanel.Controls.Add(New LiteralControl("<strong> Username </strong> : " + dr(1).ToString() + "<br>"))
-        detailsPanel.Controls.Add(New LiteralControl("<strong> Email </strong> : " + dr(3).ToString() + "<br>"))
-        detailsPanel.Controls.Add(New LiteralControl("<strong> Requested on </strong> : " + dr(5).ToString() + "<hr>"))
+        detailsPanel.Controls.Add(New LiteralControl("<strong> Email </strong> : " + dr(2).ToString() + "<br>"))
+        detailsPanel.Controls.Add(New LiteralControl("<strong> Requested on </strong> : " + dr(4).ToString() + "<hr>"))
 #End Region
 #Region "Button Panel"
         Dim btnGrant As New Button

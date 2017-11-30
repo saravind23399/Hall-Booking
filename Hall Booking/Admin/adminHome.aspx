@@ -54,7 +54,7 @@
                             <div class="panel-body">
                                 <a href="addUsers.aspx" class="btn btn-success btn-block"><b class="glyphicon glyphicon-ok pull-left"></b>Add users</a>
                                 <a href="adminManageUsers.aspx" class="btn btn-block btn-warning"><b class="glyphicon glyphicon-cog pull-left"></b>Manage</a>
-                                <a href="adminUserRequests.aspx" class="btn btn-primary btn-block"><b class="glyphicon glyphicon-user pull-left"></b>Account Requests</a>
+                                <asp:HyperLink ID="userRequestButton" runat="server" NavigateUrl="~/Admin/adminUserRequests.aspx" CssClass="btn btn-primary btn-block"></asp:HyperLink>
                             </div>
                         </div>
 

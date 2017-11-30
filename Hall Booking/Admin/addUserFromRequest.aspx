@@ -22,7 +22,7 @@
             <div class="col-lg-11">
                 <asp:TextBox ID="txtCPassword" runat="server" Class="form-control" Textmode="Password" placeholder="Confirm Password" ></asp:TextBox>
             </div>
-            <label class="col-lg-11 pad">Confirm Password </label>
+            <label class="col-lg-11 pad">Email </label>
             <div class="col-lg-11">
                 <asp:TextBox ID="txtEmail" runat="server" Class="form-control" Textmode="Email" placeholder="Email ID" ReadOnly="true" ></asp:TextBox>
             </div>

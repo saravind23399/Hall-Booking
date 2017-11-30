@@ -50,11 +50,9 @@
             </asp:ContentPlaceHolder>
         </div>
         <!-- Footer Start -->
-        <footer>
+        <footer class="footer">
             <div class="container">
-                <br />
-                <hr />
-                <p>Made with ♥ </p>
+                Made with ♥ - Aravind S - Department of CSE
             </div>
         </footer>
         <!-- Footer End -->
