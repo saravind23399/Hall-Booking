@@ -7,13 +7,19 @@
         <div class="container">
             <h2>
             <asp:label ID="titleText" runat="server" Text=""></asp:label></h2>
-                <hr />
-            <asp:Panel ID="alertStyle" Visible="false" CssClass="" role="alert" runat="server">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <asp:Label Text="" ID="alertLabel" runat="server"></asp:Label>
-                </asp:Panel>
-            <br /><br /><br />
-            <asp:PlaceHolder ID="Users" runat="server"></asp:PlaceHolder>
+            <asp:PlaceHolder ID="Halls" runat="server">
+        <asp:table runat="server" id="HallTable" class="table table-hover table-responsive">
+        <asp:TableHeaderRow>
+            <asp:TableHeaderCell>Sl.No</asp:TableHeaderCell>
+            <asp:TableHeaderCell>Name</asp:TableHeaderCell>
+            <asp:TableHeaderCell>Hall ID</asp:TableHeaderCell>
+            <asp:TableHeaderCell>Type</asp:TableHeaderCell>
+            <asp:TableHeaderCell>Capacity</asp:TableHeaderCell>
+            <asp:TableHeaderCell>Availablity</asp:TableHeaderCell>
+            <asp:TableHeaderCell>Action</asp:TableHeaderCell>
+        </asp:TableHeaderRow>
+    </asp:table>
+            </asp:PlaceHolder>
         </div>
     </div>
 </asp:Content>

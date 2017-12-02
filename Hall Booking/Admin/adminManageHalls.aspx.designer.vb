@@ -23,31 +23,22 @@ Partial Public Class adminManageHalls
     Protected WithEvents titleText As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''alertStyle control.
+    '''Halls control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents alertStyle As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents Halls As Global.System.Web.UI.WebControls.PlaceHolder
     
     '''<summary>
-    '''alertLabel control.
+    '''HallTable control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents alertLabel As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Users control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Users As Global.System.Web.UI.WebControls.PlaceHolder
+    Protected WithEvents HallTable As Global.System.Web.UI.WebControls.Table
     
     '''<summary>
     '''Master property.

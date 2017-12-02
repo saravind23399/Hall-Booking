@@ -17,6 +17,7 @@ Public Class adminHome
                 userRequestButton.Controls.Add(New LiteralControl("<span class=""badge badge-light pull-right"">" + count.ToString + "</span>"))
             End If
             userRequestButton.Controls.Add(New LiteralControl("<b class=""glyphicon glyphicon-user pull-left""></b>Account Requests"))
+            conn.Close()
         Else
             Response.Redirect("~/Home.aspx")
         End If
