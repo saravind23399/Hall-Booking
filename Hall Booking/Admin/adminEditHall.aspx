@@ -36,8 +36,8 @@
             </div>
             <label class="col-lg-11 pad">Availablity</label>
             <div class="col-lg-11">
-                     <label class="radio-inline"><input type="radio" id="radYES" runat="server">YES</label>
-                     <label class="radio-inline"><input type="radio" id="radNO" runat="server">No</label>
+                     <label class=" form-control radio-inline"><input type="radio" id="radYES" runat="server">YES</label>
+                     <label class="form-control radio-inline"><input type="radio" id="radNO" runat="server">No</label>
             </div>
             <div class="col-xs-11 space-verticall">
                 <asp:button ID="butSaveHall" class="btn btn-lg btn-success btn-default" runat="server" text="Confirm Changes" />

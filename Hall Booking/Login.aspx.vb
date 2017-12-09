@@ -31,6 +31,8 @@ Public Class WebForm3
             Session.Add("DEPARTMENT", dt.Rows(0)(4))
             If Session.Item("TYPE") = "ADMIN" Then
                 Response.Redirect("~/Admin/adminHome.aspx")
+            ElseIf Session.Item("TYPE") = "FACULTY" Then
+                Response.Redirect("~/Faculty/facultyDashboard.aspx")
             Else
                 Response.Redirect("~/Home.aspx")
             End If
@@ -49,11 +51,6 @@ Public Class WebForm3
         End If
 last:
     End Sub
-
-    Private Sub butRequest_Click(sender As Object, e As EventArgs) Handles butRequest.Click
-        Response.Redirect("~/AccountRequest.aspx")
-    End Sub
-
     Public Function HashPassword(ByVal ClearString As String) As String
         Dim uEncode As New UnicodeEncoding()
         Dim bytClearString() As Byte = uEncode.GetBytes(ClearString)

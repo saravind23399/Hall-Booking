@@ -6,11 +6,6 @@ Public Class adminMaster
             lnkAdminPanel.Attributes.Add("class", value)
         End Set
     End Property
-    Public WriteOnly Property UserRequestsSelected As String
-        Set(ByVal value As String)
-            lnkUserRequests.Attributes.Add("class", value)
-        End Set
-    End Property
     Public WriteOnly Property AddUsersSelected As String
         Set(ByVal value As String)
             lnkAddUsers.Attributes.Add("class", value)

@@ -50,24 +50,6 @@ Partial Public Class adminMaster
     Protected WithEvents lnkAddUsers As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''lnkUserRequests control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lnkUserRequests As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
-    '''<summary>
-    '''requestsbutton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents requestsbutton As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
     '''Li1 control.
     '''</summary>
     '''<remarks>

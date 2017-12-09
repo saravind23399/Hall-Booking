@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class adminHome
+Partial Public Class facultyDashboard
     
     '''<summary>
     '''lblWelcome control.
@@ -23,23 +23,14 @@ Partial Public Class adminHome
     Protected WithEvents lblWelcome As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''myTable control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents myTable As Global.System.Web.UI.WebControls.Table
-    
-    '''<summary>
     '''Master property.
     '''</summary>
     '''<remarks>
     '''Auto-generated property.
     '''</remarks>
-    Public Shadows ReadOnly Property Master() As Hall_Booking.adminMaster
+    Public Shadows ReadOnly Property Master() As Hall_Booking.facultyMaster
         Get
-            Return CType(MyBase.Master,Hall_Booking.adminMaster)
+            Return CType(MyBase.Master,Hall_Booking.facultyMaster)
         End Get
     End Property
 End Class

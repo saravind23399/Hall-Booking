@@ -68,15 +68,6 @@ Partial Public Class WebForm3
     Protected WithEvents butSignIn As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''butRequest control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents butRequest As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
     '''errors control.
     '''</summary>
     '''<remarks>

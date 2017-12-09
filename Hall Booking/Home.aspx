@@ -11,9 +11,9 @@
         <h1>Welcome to </h1>
         <h1>Seminar Halls Portal</h1>
             <hr />
-        <p>Login below or request an account to book your hall</p>
+        <p>Login below to book a hall</p>
             <span>
-  <p><a class="btn btn-success btn-lg" href="Login.aspx" role="button">Login </a>   <a class="btn btn-primary btn-lg" href="AccountRequest.aspx" role="button">Request an account</a></p>
+  <a class="btn btn-success btn-lg" href="Login.aspx" role="button">Login </a>
 </span>
 </div>
     </div>

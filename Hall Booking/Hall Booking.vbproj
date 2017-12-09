@@ -109,15 +109,14 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\addUserFromRequest.aspx" />
     <Content Include="Admin\addUsers.aspx" />
     <Content Include="Admin\adminAddHalls.aspx" />
     <Content Include="Admin\adminEditHall.aspx" />
     <Content Include="Admin\adminHome.aspx" />
     <Content Include="Admin\adminManageHalls.aspx" />
     <Content Include="Admin\adminManageUsers.aspx" />
-    <Content Include="Admin\adminUserRequests.aspx" />
     <Content Include="css\custom.css" />
+    <Content Include="Faculty\facultyDashboard.aspx" />
     <Content Include="Resources\mepcologo.png" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -131,16 +130,8 @@
     <Content Include="Home.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="AccountRequest.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\addUserFromRequest.aspx.designer.vb">
-      <DependentUpon>addUserFromRequest.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\addUserFromRequest.aspx.vb">
-      <DependentUpon>addUserFromRequest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="Admin\addUsers.aspx.designer.vb">
       <DependentUpon>addUsers.aspx</DependentUpon>
     </Compile>
@@ -190,11 +181,18 @@
       <DependentUpon>adminMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\adminUserRequests.aspx.designer.vb">
-      <DependentUpon>adminUserRequests.aspx</DependentUpon>
+    <Compile Include="Faculty\facultyDashboard.aspx.designer.vb">
+      <DependentUpon>facultyDashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\adminUserRequests.aspx.vb">
-      <DependentUpon>adminUserRequests.aspx</DependentUpon>
+    <Compile Include="Faculty\facultyDashboard.aspx.vb">
+      <DependentUpon>facultyDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Faculty\facultyMaster.Master.designer.vb">
+      <DependentUpon>facultyMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty\facultyMaster.Master.vb">
+      <DependentUpon>facultyMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HomeMaster.Master.designer.vb">
@@ -244,13 +242,6 @@
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="AccountRequest.aspx.designer.vb">
-      <DependentUpon>AccountRequest.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AccountRequest.aspx.vb">
-      <DependentUpon>AccountRequest.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -271,6 +262,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Admin\adminMaster.Master" />
     <Content Include="HomeMaster.Master" />
+    <Content Include="Faculty\facultyMaster.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

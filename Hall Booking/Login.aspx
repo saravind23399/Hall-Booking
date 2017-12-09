@@ -13,17 +13,16 @@
         <div class="form-group-lg">
             <label class="col-lg-11 ">Username </label>
             <div class="col-lg-11">
-                <asp:TextBox ID="TxtUsername" runat="server" Class="form-control" placeholder="Username" ></asp:TextBox>
+                <asp:TextBox ID="TxtUsername" runat="server" CssClass="form-control" placeholder="Username" ></asp:TextBox>
                 <asp:label ID="usernameError" runat="server" ForeColor="Red" ></asp:label>
             </div>
             <label class="col-lg-11 pad">Password </label>
             <div class="col-lg-11">
-                <asp:TextBox ID="txtPassword" runat="server" Class="form-control" placeholder="Password" TextMode="Password" ></asp:TextBox>
+                <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" placeholder="Password" TextMode="Password" ></asp:TextBox>
                 <asp:label ID="passwordError" runat="server"  ForeColor="Red" Text="" ></asp:label>
             </div>
             <div class="col-xs-11 space-verticall">
-                <asp:button ID="butSignIn" class="btn btn-lg btn-success btn-default" runat="server" text="Login" />
-                <asp:button ID="butRequest" class="btn btn-lg btn-primary btn-default" runat="server" text="Request an account" />
+                <asp:button ID="butSignIn" Cssclass="btn btn-lg btn-success btn-default" runat="server" text="Login" />
                 <br />
                 <br />
                 <asp:Label ID="errors" runat="server" Text=""></asp:Label>

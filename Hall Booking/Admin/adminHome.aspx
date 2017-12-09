@@ -21,7 +21,7 @@
                             <p>Heres whats happeing in your department</p>
                             <br />
                             <div class="table-responsive">
-                                <asp:table ID="myTable" CssClass="table table-hover table-bordered table-striped" runat="server"  class="table table-hover">
+                                <asp:table ID="myTable" CssClass="table table-hover table-bordered table-striped" runat="server">
                                     <asp:TableHeaderRow>
                                         <asp:TableHeaderCell>Time</asp:TableHeaderCell>
                                         <asp:TableHeaderCell>Halls Booked</asp:TableHeaderCell>
@@ -54,7 +54,6 @@
                             <div class="panel-body">
                                 <a href="addUsers.aspx" class="btn btn-success btn-block"><b class="glyphicon glyphicon-ok pull-left"></b>Add users</a>
                                 <a href="adminManageUsers.aspx" class="btn btn-block btn-warning"><b class="glyphicon glyphicon-cog pull-left"></b>Manage</a>
-                                <asp:HyperLink ID="userRequestButton" runat="server" NavigateUrl="~/Admin/adminUserRequests.aspx" CssClass="btn btn-primary btn-block"></asp:HyperLink>
                             </div>
                         </div>
 

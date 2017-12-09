@@ -11,80 +11,77 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class addUserFromRequest
+Partial Public Class facultyMaster
     
     '''<summary>
-    '''TxtUsername control.
+    '''head control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtUsername As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
     
     '''<summary>
-    '''txtPassword control.
+    '''form1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
-    '''txtCPassword control.
+    '''lnkDashboard control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtCPassword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents lnkDashboard As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''txtEmail control.
+    '''lnkHallAvailablity control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtEmail As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents lnkHallAvailablity As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''txtDepartment control.
+    '''lnkBook control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtDepartment As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents lnkBook As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''butCreateUser control.
+    '''LiAbout control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents butCreateUser As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents LiAbout As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''errors control.
+    '''signout control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents errors As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents signout As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''Master property.
+    '''contents control.
     '''</summary>
     '''<remarks>
-    '''Auto-generated property.
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Public Shadows ReadOnly Property Master() As Hall_Booking.adminMaster
-        Get
-            Return CType(MyBase.Master,Hall_Booking.adminMaster)
-        End Get
-    End Property
+    Protected WithEvents contents As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

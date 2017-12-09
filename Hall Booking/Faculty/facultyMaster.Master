@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="adminMaster.master.vb" Inherits="Hall_Booking.adminMaster" %>
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="facultyMaster.master.vb" Inherits="Hall_Booking.facultyMaster" %>
 
 <!DOCTYPE html>
 
@@ -39,25 +39,10 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="" id="lnkAdminPanel" runat="server"><a href="adminHome.aspx">Admin Panel</a></li>
-                            <li class="" id="lnkAddUsers" runat="server"><a href="addUsers.aspx">Register Users</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-header">Halls</li>
-                                    <li><a href="adminAddHalls.aspx">Add Halls</a></li>
-                                    <li><a href="adminManageHalls.aspx">Manage</a></li>
-                                    <li><a href="#">Remove Halls</a></li>
-                                    <li class="divider" role="separator"></li>
-                                    <li class="dropdown-header">Users</li>
-                                    <li><a href="adminManageUsers.aspx">Manage</a></li>
-                                    <li class="divider" role="separator"></li>
-                                    <li class="dropdown-header">Other Departments</li>
-                                    <li><a href="#">Request a Hall</a></li>
-                                    <li><a href="#">Hall Availablity</a></li>
-                                </ul>
-                            </li>
-                            <li class="" id="Li1" runat="server"><a href="../About.aspx">About</a></li>
+                            <li class="" id="lnkDashboard" runat="server"><a href="#">Faculty Dashboard</a></li>
+                            <li class="" id="lnkHallAvailablity" runat="server"><a href="#">Hall Availablity</a></li>
+                            <li class="" id="lnkBook" runat="server"><a href="#">Book a hall</a> </li>
+                            <li class="" id="LiAbout" runat="server"><a href="../About.aspx">About</a></li>
                             <li>
                                 <asp:Button ID="signout" runat="server" CssClass="btn btn-default navbar-btn" Text="Logout" Visible="True" />
                             </li>
